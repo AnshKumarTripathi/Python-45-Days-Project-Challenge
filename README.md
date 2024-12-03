@@ -95,7 +95,3 @@ The 45 Days Coding Challenge aims to:
    - **Features:** Data ingestion, real-time processing, dynamic visualizations.
    - **Tools:** Apache Kafka, Apache Spark, D3.js, Flask/Django.
    - **Goals:** Create a system that can handle and display large volumes of data in real-time.
-
----
-
-I hope this README file helps you get started with your 45 Days Coding Challenge for Python! If you have any further questions or need more details, feel free to ask. 😊
