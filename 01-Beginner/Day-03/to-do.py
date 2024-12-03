@@ -67,7 +67,7 @@ while True:
             addTask()
 
         while True:
-            inputInt = int(input("\n Press 1 to view the to-do list \nPress 2 to remove a task \nPress 3 to add more tasks \nPress any other key to exit the application: "))
+            inputInt = int(input("\nPress 1 to view the to-do list \nPress 2 to remove a task \nPress 3 to add more tasks \nPress any other key to exit the application: "))
             
             match inputInt:
                 case 1:
