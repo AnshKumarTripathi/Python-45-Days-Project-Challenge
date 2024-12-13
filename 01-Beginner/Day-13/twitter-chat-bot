@@ -1,0 +1,49 @@
+import tweepy
+
+# Replace these values with your API keys and tokens
+api_key = 'API'
+api_secret_key = 'Secrest'
+access_token = 'access'
+access_token_secret = 'secret'
+
+# Authenticate to Twitter
+auth = tweepy.OAuthHandler(api_key, api_secret_key)
+auth.set_access_token(access_token, access_token_secret)
+api = tweepy.API(auth, wait_on_rate_limit=True)
+
+# Verify authentication
+try:
+    api.verify_credentials()
+    print("Authentication OK")
+except Exception as e:
+    print("Error during authentication", e)
+
+def post_tweet(message):
+    try:
+        api.update_status(message)
+        print("Tweet posted successfully!")
+    except Exception as e:
+        print("Error posting tweet", e)
+
+# Example usage
+post_tweet("Hello, world! This is a tweet from my Twitter bot.")
+
+def follow_user(username):
+    try:
+        api.create_friendship(username)
+        print(f"Now following {username}")
+    except Exception as e:
+        print("Error following user", e)
+
+# Example usage
+follow_user("TwitterDev")
+
+def like_tweet(tweet_id):
+    try:
+        api.create_favorite(tweet_id)
+        print("Tweet liked!")
+    except Exception as e:
+        print("Error liking tweet", e)
+
+# Example usage
+like_tweet("tweet_id_here")
