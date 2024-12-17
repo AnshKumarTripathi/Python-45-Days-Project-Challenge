@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Flask Web App</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+  <h1>Welcome to my Flask Web App</h1>
+  <button onclick="greet()">Click Me</button>
+
+  <div class="card-container">
+    <div class="card">
+      <h2>Title</h2>
+      <div class="img-container">
+        <img
+          src="https://images.pexels.com/photos/29254310/pexels-photo-29254310/free-photo-of-mystical-autumn-landscape-in-foggy-hamburg.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+      </div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, odio nemo? Molestiae eius suscipit placeat,
+        libero sunt deleniti iste dignissimos.</p>
+    </div>
+    <div class="card">
+      <h2>Title</h2>
+      <div class="img-container">
+        <img
+          src="https://images.pexels.com/photos/29254310/pexels-photo-29254310/free-photo-of-mystical-autumn-landscape-in-foggy-hamburg.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+      </div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, odio nemo? Molestiae eius suscipit placeat,
+        libero sunt deleniti iste dignissimos.</p>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+
+</html>
