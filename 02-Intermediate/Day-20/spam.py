@@ -8,7 +8,6 @@ import nltk
 from nltk.corpus import stopwords
 import string
 
-# Download NLTK stopwords
 nltk.download('stopwords')
 stop_words = set(stopwords.words('english'))
 
@@ -20,8 +19,6 @@ def preprocess_text(text):
     words = [word for word in words if word not in stop_words]  # Remove stopwords
     return ' '.join(words)
 
-# Load the dataset (replace 'spam.txt' with your dataset path)
-# Assuming the dataset is tab-separated
 df = pd.read_csv('D:/45-Days-Challege-JS-Python/SMSSpamCollection', sep='\t', header=None, names=['label', 'message'])
 
 # Preprocess messages
