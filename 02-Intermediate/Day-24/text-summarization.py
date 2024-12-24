@@ -1,6 +1,5 @@
 from transformers import pipeline
 
-# Sample text
 text = """
     Artificial intelligence (AI) is intelligence demonstrated by machines,
     in contrast to the natural intelligence displayed by humans and animals.
